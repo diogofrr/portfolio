@@ -1,0 +1,10 @@
+/*CABEÇALHO*/
+.main-header{
+  width: 100vw;
+  height: 70px;
+  background-color: var(--corfundo);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--Montserrat);
+  font-weight: 500;
+}

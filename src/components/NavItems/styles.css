@@ -1,0 +1,83 @@
+/*BOTÕES DE NAVEGAÇÃO*/
+.main-header__nav{
+  margin-right: 3rem;
+}
+
+.main-header__ul{
+  display: flex;
+  align-items: center;
+}
+
+.main-header__li{
+  list-style: none;
+}
+
+.main-header__li a{
+  display: inline-block;
+  height: 70px;
+  width: 100px;
+  text-decoration: none;
+  color: var(--cortexto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.main-header__li a:hover{
+  background-color: var(--corhover);
+  color: var(--cortextohover);
+}
+
+
+
+
+
+
+
+
+
+/*QUEBRA DE LINHA */
+@media screen and (max-width: 780px) {
+
+  /*ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO PARA A AÇÃO DE ATIVAÇÃO*/
+
+  .main-header__nav{
+      display: block;
+      background-color: var(--corfundo);
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      z-index: 9999;
+      height: 0px;
+      transition: .6s;
+      visibility: hidden;
+      overflow-y: hidden;
+  }
+
+  .main-header__nav.nav-active{
+      visibility: visible;
+      overflow-y: auto;
+      height: calc(100vh - 70px);
+  }
+
+  .main-header__li{
+    height: 15vh;
+  }
+
+  .main-header__li a{
+    height: 100%;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .main-header__li > a:hover{
+    background-color: var(--corhover);
+    color: var(--cortextohover);
+  }
+
+  .main-header__ul, .main-header__li a{
+      display: block;
+      width: 100%;
+  }
+}

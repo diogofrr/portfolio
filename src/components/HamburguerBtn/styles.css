@@ -1,0 +1,52 @@
+/*BOTÃO HAMBURGUER*/
+.main-header__menu-button{
+  align-self: center;
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  border: none;
+  margin-right: 3rem;
+}
+
+.menu-button__line{
+  width: 30px;
+  height: 2px;
+  background-color: var(--cortexto);
+  margin: 7px;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .main-header__menu-button{
+    display: block;
+  }
+
+  /*ANIMAÇÃO DO BOTÃO HAMBURGUER*/
+  .main-header__menu-button .menu-button__line, .main-header__menu-button.closeAni .menu-button__line{
+    transition: .6s;
+  }
+
+  .main-header__menu-button.closeAni .menu-button__line{
+    position: relative;
+  }
+
+  .main-header__menu-button.closeAni #l1, #l3{
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .main-header__menu-button.closeAni #l1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .main-header__menu-button.closeAni #l2{
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  .main-header__menu-button.closeAni #l3{
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}

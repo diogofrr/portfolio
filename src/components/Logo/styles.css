@@ -1,0 +1,13 @@
+/*LOGOTIPO*/
+.main-header__logo{
+  margin-left: 3rem;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cortexto);
+}
+
+.logo__icon{
+  font-size: 4.8rem;
+}

@@ -1,8 +1,12 @@
+import { NavBar } from '../../components/NavBar';
+import { WelcomeContainer } from '../../components/WelcomeContainer';
+
 const App = () => {
   return (
-    <div>
-      <h1>Olá Mundo</h1>
-    </div>
+    <>
+      <NavBar />
+      <WelcomeContainer />
+    </>
   );
 };
 
