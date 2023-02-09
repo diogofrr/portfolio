@@ -5,7 +5,7 @@ export const BlurredBackground = () => {
   return (
     <>
       <div className="backgroundparalax"></div>
-      <TypingText />
+      <TypingText textArray={['Olá Mundo', 'Tudo bem?']} />
     </>
   );
 };

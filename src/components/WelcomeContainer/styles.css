@@ -3,4 +3,39 @@
   height: calc(20vh - 70px);
   background-color: var(--corfundo);
   background-color: var(--corfundo);
+  color: var(--corfuncional);
+  font-size: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.neonEffect{
+  width: 10rem;
+  transition: .3s;
+  animation: floating 2s infinite;
+}
+
+.neonEffect *{
+  filter: drop-shadow(10px 10px 200px var(--corfuncional)) drop-shadow(-10px -10px 50px var(--corfuncional));
+}
+
+.neonEffect:hover{
+  cursor: pointer;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px) ;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+

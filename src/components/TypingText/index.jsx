@@ -1,22 +1,32 @@
-/* eslint-disable no-unused-vars */
-import P from 'prop-types';
+// import P from 'prop-types';
+import Typewriter from 'typewriter-effect';
 import './styles.css';
 
-export const TypingText = ({ Text }) => {
-  const teste = ['ola pessoa', 'oii tudo bem', 'afhaugfah'];
-
+export const TypingText = () => {
   return (
     <span className="text-box">
-      <h1 className="typed-text"></h1>
-      <span className="cursor">&nbsp;</span>
+      <Typewriter
+        wrapperClassName={'Typewriter__wrapper'}
+        cursorClassName={'Typewriter__cursor'}
+        onInit={(typewriter) => {
+          typewriter
+            .typeString('Lorem Ipsum Dolor')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('sir Amet! Lorem ipsum dolor')
+            .pauseFor(2500)
+            .deleteAll()
+            .start();
+        }}
+        options={{
+          autoStart: true,
+          loop: true,
+        }}
+      />
     </span>
   );
 };
 
-TypingText.defaultProps = {
-  Text: '',
-};
-
-TypingText.propTypes = {
-  Text: P.array,
-};
+// TypingText.propTypes = {
+//   textArray: P.string.isRequired,
+// };

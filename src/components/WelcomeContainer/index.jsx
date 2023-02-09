@@ -1,5 +1,7 @@
 // import { useState, useEffect } from 'react';
 import { BlurredBackground } from '../BlurredBackground';
+import { SlArrowDown } from 'react-icons/sl';
+
 import './styles.css';
 
 export const WelcomeContainer = () => {
@@ -8,7 +10,9 @@ export const WelcomeContainer = () => {
       <section className="firstcontainer">
         <BlurredBackground />
       </section>
-      <div className="firstcontainer__div"></div>
+      <div className="firstcontainer__div">
+        <SlArrowDown className="neonEffect" />
+      </div>
     </>
   );
 };

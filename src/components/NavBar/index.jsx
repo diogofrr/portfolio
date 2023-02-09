@@ -12,7 +12,6 @@ export const NavBar = () => {
 
   function toggleMenu() {
     setActiveMenu(() => !menuAnimation);
-    console.log('teste');
   }
 
   useEffect(() => {

@@ -1,0 +1,53 @@
+.sideIcons{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-right: -10px;
+  transform: translate(0,-50%);
+  font-size: 3.6rem;
+  color: white;
+  width: 6rem;
+  height: 35rem;
+  transition: .3s;
+}
+
+.sideIcons > a{
+  color: white;
+  width: 100%;
+  transition: .3s;
+  z-index: 10;
+  padding: 10px;
+}
+
+.sideIcons > a:hover{
+  transition: .3s;
+  cursor: pointer;
+  filter: drop-shadow(#00FBFF);
+  transform: translateX(-10px);
+}
+
+.sideIcons a:nth-child(1):hover{
+  color: #9400FF;
+}
+
+.sideIcons a:nth-child(2):hover{
+  color: #51c2ff;
+}
+
+.sideIcons a:nth-child(3):hover{
+  color: #28D16B;
+}
+
+.sideIcons a:nth-child(4):hover{
+  color: #EA4335;
+}
+
+@media screen and (max-width: 975px) {
+  .sideIcons{
+    display: none;
+  }
+}
