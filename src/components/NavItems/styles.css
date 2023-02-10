@@ -24,9 +24,29 @@
   font-size: 1.6rem;
 }
 
-.main-header__li a:hover{
-  background-color: var(--corhover);
-  color: var(--cortextohover);
+.main-header__li > a:hover{
+  color: #FFCE19;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 7px var(--corfuncional),
+      0 0 10px var(--corfuncional),
+      0 0 21px var(--corfuncional),
+      0 0 42px var(--corfuncional),
+      0 0 82px var(--corfuncional),
+      0 0 92px var(--corfuncional),
+      0 0 102px var(--corfuncional),
+      0 0 151px var(--corfuncional);
+  }
+
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
 }
 
 

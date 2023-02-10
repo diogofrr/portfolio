@@ -1,0 +1,13 @@
+.main-footer{
+  width: 100vw;
+  height: calc(20vh - 70px);
+  background-color: var(--corfundo);
+  color: var(--cortexto);
+  font-size:  1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--Montserrat);
+  font-weight: 500;
+}

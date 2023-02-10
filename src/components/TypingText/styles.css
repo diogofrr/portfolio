@@ -1,6 +1,4 @@
 .text-box{
-  display: flex;
-  flex-wrap: nowrap;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -11,12 +9,22 @@
   font-family: var(--Montserrat);
 }
 
-.Typewriter__wrapper{
-  color: var(--cortexto);
-  font-size: 5.6rem;
+.text-box h1, .text-box h2{
+  display: inline;
 }
 
-.Typewriter__cursor {
+.text-box__title{
+  font-size: 5.6rem;
+  color: var(--cortexto);
+}
+
+.text-box__subtitle{
+  color: var(--cortextosecundario);
+  font-size: 1.6rem;
+}
+
+.text-box__cursor{
+  display: inline;
+  font-size: 5.6rem;
   color: var(--corprincipal);
-  font-size: 6.4rem;
 }

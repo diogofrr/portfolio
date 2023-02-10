@@ -1,6 +1,8 @@
-.backgroundparalax{
+.welcome-section__div--blur{
+  position: absolute;
+  top: 0;
   width: 100vw;
-  height: 80vh;
+  height: calc(100vh);
   background-image: url('../../../public/img/cidade-fundo-e.jpg');
   background-repeat: no-repeat;
   background-size: cover;

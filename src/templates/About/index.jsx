@@ -1,15 +1,16 @@
 import { NavBar } from '../../components/NavBar';
 import { SideNavIcons } from '../../components/SideNavIcons';
-import { WelcomeContainer } from '../../components/WelcomeContainer';
+// import { Footer } from '../../components/Footer';
+import { Profile } from '../../components/Profile';
 
-const App = () => {
+const About = () => {
   return (
     <>
       <NavBar />
-      <WelcomeContainer />
       <SideNavIcons />
+      <Profile />
     </>
   );
 };
 
-export default App;
+export default About;

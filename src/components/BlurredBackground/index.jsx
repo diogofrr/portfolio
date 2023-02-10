@@ -1,11 +1,17 @@
+import { Link } from 'react-router-dom';
+
+import { NeonBtn } from '../NeonBtn';
 import { TypingText } from '../TypingText';
 import './styles.css';
 
 export const BlurredBackground = () => {
   return (
     <>
-      <div className="backgroundparalax"></div>
-      <TypingText textArray={['Olá Mundo', 'Tudo bem?']} />
+      <div className="welcome-section__div--blur"></div>
+      <TypingText />
+      <Link to="/sobre">
+        <NeonBtn />
+      </Link>
     </>
   );
 };

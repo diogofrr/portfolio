@@ -12,7 +12,11 @@ export const SideNavIcons = () => {
       <a href="https://www.linkedin.com/in/diogo-ferreira-0513ba223/" target="_blank" rel="noreferrer">
         <FiLinkedin />
       </a>
-      <a href="https://www.wa.me/+5531971890386" target="_blank" rel="noreferrer">
+      <a
+        href="https://api.whatsapp.com/send/?phone=5531917890386&text&type=phone_number&app_absent=0"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsWhatsapp />
       </a>
       <a href="mailto:ddiogof20@gmail.com?subject=Digite sua mensagem..." target="_blank" rel="noreferrer">

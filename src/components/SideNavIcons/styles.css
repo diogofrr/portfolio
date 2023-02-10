@@ -23,10 +23,9 @@
   padding: 10px;
 }
 
-.sideIcons > a:hover{
+.sideIcons a:hover{
   transition: .3s;
   cursor: pointer;
-  filter: drop-shadow(#00FBFF);
   transform: translateX(-10px);
 }
 
@@ -48,6 +47,22 @@
 
 @media screen and (max-width: 975px) {
   .sideIcons{
-    display: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: white;
+    width: 250px;
+    height: 60px;
+    transition: .3s;
+    overflow: hidden;
+  }
+
+  .sideIcons:hover a:hover{
+    transform: translateX(0px);
   }
 }

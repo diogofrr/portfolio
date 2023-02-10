@@ -1,0 +1,32 @@
+.welcome-section__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 1.5rem 2.5rem;
+
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: .5rem;
+  cursor: pointer;
+
+
+  color: var(--corsecundaria);
+  border: 6px solid var(--corsecundaria);
+  background-color: transparent;
+  filter: drop-shadow(0 0 15px var(--corsecundaria));
+
+  transition: .5s;
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.welcome-section__button:hover {
+  filter: drop-shadow(0 0 15px var(--corsecundaria)) drop-shadow(0 0 50px var(--corsecundaria)) contrast(2) brightness(2);
+}

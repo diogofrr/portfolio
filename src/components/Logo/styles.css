@@ -6,8 +6,11 @@
   align-items: center;
   justify-content: center;
   color: var(--cortexto);
+  font-size: 4.8rem;
+  font-weight: 700;
 }
 
-.logo__icon{
-  font-size: 4.8rem;
+.logo__text{
+  display: none;
+  margin-left: 2rem;
 }
