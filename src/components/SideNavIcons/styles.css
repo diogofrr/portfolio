@@ -31,18 +31,22 @@
 
 .sideIcons a:nth-child(1):hover{
   color: #9400FF;
+  filter: drop-shadow(0px 0px 12px #9400FF);
 }
 
 .sideIcons a:nth-child(2):hover{
   color: #51c2ff;
+  filter: drop-shadow(0px 0px 12px #51c2ff);
 }
 
 .sideIcons a:nth-child(3):hover{
   color: #28D16B;
+  filter: drop-shadow(0px 0px 12px #28D16B);
 }
 
 .sideIcons a:nth-child(4):hover{
   color: #EA4335;
+  filter: drop-shadow(0px 0px 12px #EA4335);
 }
 
 @media screen and (max-width: 975px) {
