@@ -8,12 +8,12 @@ export const TypingText = () => {
         onInit={(typewriter) => {
           typewriter
             .typeString('<h1 class="text-box__title">Seja Bem-Vindo!</h1>')
-            .typeString('<br/>')
+            .pauseFor(300)
             .callFunction(() => {
               document.querySelector('.text-box__cursor').style.fontSize = '1.6rem';
               document.querySelector('.text-box__cursor').style.color = 'var(--corsecundaria)';
             })
-            .pauseFor(100)
+            .typeString('<br/>')
             .typeString('<h2 class="text-box__subtitle">Conheça um pouco mais sobre mim e meus projetos.</h2>')
             .start();
         }}

@@ -2,9 +2,15 @@
 .main-header{
   width: 100vw;
   height: 70px;
-  background-color: rgb(0, 0, 0, 0.300);
   display: flex;
   justify-content: space-between;
   font-family: var(--Montserrat);
   font-weight: 500;
+}
+
+
+@media screen and (max-width: 780px) {
+  .main-header{
+    background-color: rgb(0, 0, 0) !important;
+  }
 }

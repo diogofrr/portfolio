@@ -4,7 +4,7 @@ import './styles.css';
 
 export const WelcomeContainer = () => {
   return (
-    <section className="firstcontainer">
+    <section className="welcome-section">
       <BlurredBackground />
     </section>
   );

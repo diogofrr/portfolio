@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import P from 'prop-types';
 
 import './styles.css';
 import { HamburguerBtn } from '../HamburguerBtn';
 import { Logo } from '../Logo';
 import { NavItems } from '../NavItems';
 
-export const NavBar = () => {
+export const NavBar = ({ className }) => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [menuAnimation, setMenuAnimation] = useState('');
   const [buttonAnimation, setButtonAnimation] = useState(false);
@@ -25,10 +26,14 @@ export const NavBar = () => {
   }, [activeMenu]);
 
   return (
-    <header className="main-header">
+    <header className={`main-header ${className}`}>
       <Logo />
       <HamburguerBtn animationTrigger={buttonAnimation} handleStartAnimation={toggleMenu} />
       <NavItems menuAnimation={menuAnimation} />
     </header>
   );
+};
+
+NavBar.propTypes = {
+  className: P.string.isRequired,
 };

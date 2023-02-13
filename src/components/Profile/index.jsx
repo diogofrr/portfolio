@@ -4,10 +4,10 @@ import './styles.css';
 export const Profile = () => {
   return (
     <section className="profile-section">
-      <div className="profile-section__descricao">
+      <div className="profile-section__desc">
         <Circle width={'200px'} height={'200px'} backgroundColor={'red'} position={'none'} />
       </div>
-      <div className="profile-section__texto">
+      <div className="profile-section__text">
         <h2>Desenvolvedor Junior</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ever since

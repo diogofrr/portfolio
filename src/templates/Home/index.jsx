@@ -1,12 +1,13 @@
 import { NavBar } from '../../components/NavBar';
 import { SideNavIcons } from '../../components/SideNavIcons';
 import { WelcomeContainer } from '../../components/WelcomeContainer';
-// import { Footer } from '../../components/Footer';
+
+import './styles.css';
 
 const Home = () => {
   return (
     <>
-      <NavBar />
+      <NavBar className={'welcome-section__navbar'} />
       <WelcomeContainer />
       <SideNavIcons />
     </>
