@@ -1,4 +1,4 @@
-.sideIcons{
+.side-icons{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -15,7 +15,7 @@
   transition: .3s;
 }
 
-.sideIcons > a{
+.side-icons > a{
   color: white;
   width: 100%;
   transition: .3s;
@@ -23,34 +23,34 @@
   padding: 10px;
 }
 
-.sideIcons a:hover{
+.side-icons a:hover{
   transition: .3s;
   cursor: pointer;
   transform: translateX(-10px);
 }
 
-.sideIcons a:nth-child(1):hover{
+.side-icons a:nth-child(1):hover{
   color: #9400FF;
   filter: drop-shadow(0px 0px 12px #9400FF);
 }
 
-.sideIcons a:nth-child(2):hover{
+.side-icons a:nth-child(2):hover{
   color: #51c2ff;
   filter: drop-shadow(0px 0px 12px #51c2ff);
 }
 
-.sideIcons a:nth-child(3):hover{
+.side-icons a:nth-child(3):hover{
   color: #28D16B;
   filter: drop-shadow(0px 0px 12px #28D16B);
 }
 
-.sideIcons a:nth-child(4):hover{
+.side-icons a:nth-child(4):hover{
   color: #EA4335;
   filter: drop-shadow(0px 0px 12px #EA4335);
 }
 
 @media screen and (max-width: 975px) {
-  .sideIcons{
+  .side-icons{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
@@ -66,7 +66,7 @@
     overflow: hidden;
   }
 
-  .sideIcons:hover a:hover{
+  .side-icons:hover a:hover{
     transform: translateX(0px);
   }
 }

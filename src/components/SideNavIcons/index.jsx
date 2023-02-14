@@ -5,7 +5,7 @@ import { SlEnvolopeLetter } from 'react-icons/sl';
 
 export const SideNavIcons = () => {
   return (
-    <nav className="sideIcons">
+    <nav className="side-icons">
       <a href="https://github.com/diogofrr" target="_blank" rel="noreferrer">
         <FiGithub />
       </a>
@@ -19,7 +19,7 @@ export const SideNavIcons = () => {
       >
         <BsWhatsapp />
       </a>
-      <a href="mailto:ddiogof20@gmail.com?subject=Digite sua mensagem..." target="_blank" rel="noreferrer">
+      <a href="mailto:ddiogof20@gmail.com" target="_blank" rel="noreferrer">
         <SlEnvolopeLetter />
       </a>
     </nav>

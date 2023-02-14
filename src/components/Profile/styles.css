@@ -11,28 +11,46 @@
   color: var(--cortexto);
 }
 
-.profile-section h2{
+.desc__h2{
+  font-family: var(--Montserrat);
+  font-weight: 700;
   font-size: 6rem;
   margin-bottom: 2rem;
 }
 
-.profile-section p{
+.desc__p{
   font-size: 2rem;
+  line-height: calc(2rem * 1.4);
   letter-spacing: .1rem;
-  font-family: var(--Montserrat);
+  font-family: var(--OpenSans);
 }
 
 /* Imagem do container sobre */
 .profile-section__img{
   width: 30%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.img__person-name{
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: var(--cortexto);
+  font-family: var(--Montserrat);
+}
+
+.img__desc{
+  font-size: 2rem;
+  color: var(--cortextosecundario);
+  font-family: var(--OpenSans);
+  font-weight: 500;
+}
+
 /* Descrição do container sobre */
 .profile-section__desc{
-  width: 40%;
+  width: 45%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -41,29 +59,29 @@
 
 /* Botões para o linkedin e email do container sobre*/
 
-.desc__buttons ul{
+.desc__buttons{
   display: flex;
-  font-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
-.desc__buttons li{
-  margin: 2rem 0;
+.social-btn{
+  margin-top: 2rem;
+  width: fit-content;
+  width: 21rem;
+  height: 8rem;
+  position: static;
 }
 
-.desc__buttons li:nth-child(2){
-  margin-left: 2rem;
+.social-btn > button{
+  margin: 0 1rem;
 }
 
-.desc__buttons a{
+.social-btn > a {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 15rem;
-  height: 5rem;
-  background-color: var(--corfuncional);
-  text-decoration: none;
-  color: black;
-  font-family: var(--Montserrat);
-  font-weight: 700;
 }

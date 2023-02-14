@@ -1,39 +1,23 @@
-.welcome-section__button{
+.neon-button {
   display: flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 15px;
-  padding: 1.5rem 2.5rem;
 
-  font-size: 2.4rem;
-  font-weight: bold;
-  letter-spacing: .5rem;
+  width: 24rem;
+  height: 8rem;
+
   cursor: pointer;
-
-
-  color: var(--corsecundaria);
-  border: 6px solid var(--corsecundaria);
   background-color: transparent;
-  filter: drop-shadow(0 0 15px var(--corsecundaria));
 
   transition: .5s;
-
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 
-.welcome-section__button:hover {
-  filter: drop-shadow(0 0 15px var(--corsecundaria)) drop-shadow(0 0 50px var(--corsecundaria)) contrast(2) brightness(2);
+.button__text{
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  text-decoration: none;
 }
-
-
-/* @media screen and (max-width: 360px) and (max-height: 720px){
-  .welcome-section__button{
-
-  }
-} */

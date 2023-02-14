@@ -5,8 +5,6 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  font-weight: 700;
-  font-family: var(--Montserrat);
 }
 
 .text-box h1, .text-box h2{
@@ -14,17 +12,28 @@
 }
 
 .text-box__title{
-  font-size: 5.6rem;
+  font-size: 6rem;
   color: var(--cortexto);
+  font-family: var(--Montserrat);
+  font-weight: 700;
 }
 
 .text-box__subtitle{
   color: var(--cortextosecundario);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-family: var(--OpenSans);
 }
 
 .text-box__cursor{
   display: inline;
   font-size: 5.6rem;
   color: var(--corprincipal);
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 600px){
+  .text-box__title{
+    font-size: 5.6rem;
+  }
 }

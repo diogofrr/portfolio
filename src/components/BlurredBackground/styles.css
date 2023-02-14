@@ -13,3 +13,11 @@
   z-index: -9999;
   overflow: hidden;
 }
+
+.welcome-section__button{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
