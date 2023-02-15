@@ -135,7 +135,7 @@ Laptop ou desktop de alta resolução: 1920 x 1080.
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1080px){
   .profile-section__main-profile{
     flex-direction: column;
     align-items: center;

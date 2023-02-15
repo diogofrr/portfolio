@@ -38,3 +38,13 @@
     font-size: 5.6rem;
   }
 }
+
+@media screen and (max-width: 400px){
+  .text-box__title{
+    font-size: 4.6rem;
+  }
+
+  .text-box__subtitle{
+    font-size: 1.6rem;
+  }
+}

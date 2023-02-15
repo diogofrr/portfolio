@@ -36,22 +36,20 @@ body{
 /*Resolução MOBILE*/
 @media screen and (max-width: 600px){
   html{
-    font-size: 42.5%;
+    font-size: 40%;
   }
 }
 
 /*Resolução TABLET*/
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1366px){
   html{
     font-size: 50%;
   }
 }
 
-
-/*Resolução PC*/
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 480){
   html{
-    font-size: 52%;
+    font-size: 40%;
   }
 }
