@@ -1,44 +1,72 @@
 /* Container da descrição sobre */
 .profile-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   min-height: calc(100vh - 70px);
   height: auto;
   width: 100vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: wrap row;
+
   background-color: var(--corfundo);
   color: var(--cortexto);
+}
+
+.profile-section__main-profile{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-flow: wrap row;
+}
+
+.desc__h2, .desc__p{
+  padding-left: 2rem;
 }
 
 .desc__h2{
   font-family: var(--Montserrat);
   font-weight: 700;
+  letter-spacing: .2rem;
   font-size: 6rem;
   margin-bottom: 2rem;
 }
 
+.desc__h2__cursor{
+  color: var(--corprincipal);
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 8rem;
+  text-shadow:
+  0 0 4px var(--corprincipal),
+  0 0 11px var(--corprincipal);
+}
+
 .desc__p{
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: calc(2rem * 1.4);
   letter-spacing: .1rem;
+  word-spacing: .2rem;
   font-family: var(--OpenSans);
 }
 
 /* Imagem do container sobre */
-.profile-section__img{
-  width: 30%;
+.main-profile__img{
+  min-width: 30%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .img__person-name{
-  margin-top: 4rem;
-  font-size: 3rem;
   color: var(--cortexto);
+  font-size: 3rem;
   font-family: var(--Montserrat);
+  margin-top: 4rem;
+  padding-bottom: 0.5rem;
 }
 
 .img__desc{
@@ -46,42 +74,99 @@
   color: var(--cortextosecundario);
   font-family: var(--OpenSans);
   font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 
-/* Descrição do container sobre */
-.profile-section__desc{
+/* Texto do container sobre */
+.main-profile__desc{
   width: 45%;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
   flex-flow: column nowrap;
 }
 
 /* Botões para o linkedin e email do container sobre*/
 
 .desc__buttons{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  padding: 2rem;
+
 }
 
-.social-btn{
-  margin-top: 2rem;
-  width: fit-content;
-  width: 21rem;
+.buttons__btn-contact{
   height: 8rem;
-  position: static;
+  width: 21rem;
+  margin-top: 2rem;
+  transition: .3s;
+  filter: drop-shadow(0 0 4px var(--corfuncional)) !important;
 }
 
-.social-btn > button{
-  margin: 0 1rem;
+.buttons__btn-contact:hover{
+  filter: drop-shadow(0 0 10px var(--corfuncional)) !important;
 }
 
-.social-btn > a {
+.buttons__btn-contact > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*
+Móvel: 360 x 640.
+Móvel: 375 x 667.
+Móvel: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tabuleiro: 768 x 1024.
+Portátil: 1366 x 768.
+Laptop ou desktop de alta resolução: 1920 x 1080.
+*/
+
+
+@media screen and (max-width: 1280px){
+  .main-profile__desc{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .profile-section__main-profile{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-profile__img{
+    max-width: 90%;
+    margin: 10rem 0 5rem 0;
+  }
+
+  .main-profile__desc{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .main-profile__img > div{
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .desc__h2{
+    font-size: 4rem;
+  }
+
+  .desc__p{
+    font-size: 1.6rem;
+  }
+
+  .desc__h2__cursor{
+    font-size: 6rem;
+  }
 }

@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
 import P from 'prop-types';
+import useScrollBlock from '../../utils/useScrollBlock';
 
 import './styles.css';
 import { HamburguerBtn } from '../HamburguerBtn';
 import { Logo } from '../Logo';
 import { NavItems } from '../NavItems';
 
-export const NavBar = ({ className }) => {
+export const NavBar = ({ className, hasScroll = false }) => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [menuAnimation, setMenuAnimation] = useState('');
   const [buttonAnimation, setButtonAnimation] = useState(false);
+  const [blockScroll, allowScroll] = useScrollBlock();
 
   function toggleMenu() {
     setActiveMenu(() => !menuAnimation);
@@ -19,11 +21,13 @@ export const NavBar = ({ className }) => {
     if (activeMenu) {
       setMenuAnimation(() => 'nav-active');
       setButtonAnimation(() => false);
+      hasScroll && blockScroll();
     } else {
       setMenuAnimation(() => '');
       setButtonAnimation(() => true);
+      hasScroll && allowScroll();
     }
-  }, [activeMenu]);
+  }, [activeMenu, blockScroll, allowScroll, hasScroll]);
 
   return (
     <header className={`main-header ${className}`}>
@@ -36,4 +40,5 @@ export const NavBar = ({ className }) => {
 
 NavBar.propTypes = {
   className: P.string.isRequired,
+  hasScroll: P.bool,
 };

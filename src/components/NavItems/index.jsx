@@ -1,5 +1,4 @@
 import P from 'prop-types';
-import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -8,16 +7,16 @@ export const NavItems = ({ menuAnimation }) => {
     <nav className={`main-header__nav ${menuAnimation}`}>
       <ul className="main-header__ul" role="menu">
         <li className="main-header__li">
-          <Link to="/">Início</Link>
+          <a href="/">Início</a>
         </li>
         <li className="main-header__li">
-          <Link to="/sobre">Sobre</Link>
+          <a href="/sobre">Sobre</a>
         </li>
         <li className="main-header__li">
-          <Link to="/">Projetos</Link>
+          <a href="/">Projetos</a>
         </li>
         <li className="main-header__li">
-          <Link to="/">Contato</Link>
+          <a href="/">Contato</a>
         </li>
       </ul>
     </nav>

@@ -24,7 +24,7 @@
   font-size: 16px;
 }
 
-.main-header__li > a:hover{
+.main-header__li a:hover{
   color: #FFCE19;
   animation: flicker 1.5s infinite alternate;
 }
@@ -63,16 +63,17 @@
   /*ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO PARA A AÇÃO DE ATIVAÇÃO*/
 
   .main-header__nav{
-      display: block;
-      background-color: var(--corfundo);
-      width: 100%;
-      position: absolute;
-      top: 70px;
-      z-index: 9999;
-      height: 0px;
-      transition: .6s;
-      visibility: hidden;
-      overflow-y: hidden;
+    position: fixed;
+    display: block;
+    background-color: var(--corfundo);
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    z-index: 9999;
+    height: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
   }
 
   .main-header__nav.nav-active{
@@ -92,8 +93,9 @@
   }
 
   .main-header__li > a:hover{
-    background-color: var(--corhover);
-    color: var(--cortextohover);
+    background-color: var(--corfundo);
+    color: var(--cortexto);
+    animation: none;
   }
 
   .main-header__ul, .main-header__li a{

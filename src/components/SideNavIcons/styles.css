@@ -54,14 +54,18 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
+
+    position: fixed;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     font-size: 36px;
-    color: white;
+
     width: 250px;
     height: 60px;
+
+    color: white;
     transition: .3s;
     overflow: hidden;
   }

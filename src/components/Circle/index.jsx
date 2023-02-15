@@ -3,7 +3,7 @@ import './styles.css';
 
 export const Circle = ({ backgroundColor, top, left, right, bottom, width, height, position }) => {
   const circleStyle = {
-    borderRadius: '50%',
+    borderRadius: '100%',
     position: position,
     top: top,
     left: left,

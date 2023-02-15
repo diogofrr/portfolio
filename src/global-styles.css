@@ -33,8 +33,25 @@ body{
   font-size: 1.6rem;
 }
 
+/*Resolução MOBILE*/
 @media screen and (max-width: 600px){
   html{
-    font-size: 44.5%;
+    font-size: 42.5%;
+  }
+}
+
+/*Resolução TABLET*/
+
+@media screen and (max-width: 900px){
+  html{
+    font-size: 50%;
+  }
+}
+
+
+/*Resolução PC*/
+@media screen and (max-width: 1366px){
+  html{
+    font-size: 52%;
   }
 }

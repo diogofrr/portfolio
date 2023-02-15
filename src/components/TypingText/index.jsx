@@ -10,8 +10,9 @@ export const TypingText = () => {
             .typeString('<h1 class="text-box__title">Seja Bem-Vindo!</h1>')
             .pauseFor(300)
             .callFunction(() => {
-              document.querySelector('.text-box__cursor').style.fontSize = '1.6rem';
+              document.querySelector('.text-box__cursor').style.fontSize = '2.6rem';
               document.querySelector('.text-box__cursor').style.color = 'var(--corsecundaria)';
+              document.querySelector('.text-box__cursor').style.textShadow = '0 0 9px var(--corsecundaria)';
             })
             .typeString('<br/>')
             .typeString('<h2 class="text-box__subtitle">Conheça um pouco mais sobre mim e meus projetos.</h2>')
@@ -19,9 +20,7 @@ export const TypingText = () => {
         }}
         options={{
           autoStart: true,
-          wrapperClassName: 'Typewriter__wrapper text-box__h1',
-          cursorClassName: 'Typewriter__cursor h1__cursor',
-          cursor: `<span class="text-box__cursor">|</span>`,
+          cursorClassName: 'Typewriter__cursor text-box__cursor',
         }}
       />
     </span>

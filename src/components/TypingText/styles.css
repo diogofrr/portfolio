@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
 }
 
-.text-box h1, .text-box h2{
+.text-box__title, .text-box__subtitle{
   display: inline;
 }
 
@@ -26,11 +26,12 @@
 
 .text-box__cursor{
   display: inline;
-  font-size: 5.6rem;
+  font-size: 8rem;
+  font-weight: 900;
+  font-family: sans-serif;
   color: var(--corprincipal);
-  font-weight: 700;
+  text-shadow: 0 0 9px var(--corprincipal);
 }
-
 
 @media screen and (max-width: 600px){
   .text-box__title{
