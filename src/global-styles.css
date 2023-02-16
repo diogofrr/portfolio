@@ -23,6 +23,23 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--corsecundaria) var(--corfundo);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--corfundo);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--corsecundaria);
+  border-radius: 20px;
+  border: 3px solid var(--corfundo);
 }
 
 html{
@@ -32,6 +49,7 @@ html{
 body{
   font-size: 1.6rem;
 }
+
 
 /*Resolução MOBILE*/
 @media screen and (max-width: 600px){

@@ -1,9 +1,9 @@
-import Typewriter from 'typewriter-effect';
-
 import './styles.css';
 
 import { Circle } from '../Circle';
 import { NeonBtn } from '../NeonBtn';
+import { PG } from '../PG';
+import { TitleH2 } from '../TitleH2';
 
 export const Profile = () => {
   return (
@@ -16,25 +16,15 @@ export const Profile = () => {
         </div>
         <div className="main-profile__desc">
           <div className="desc__text">
-            <h2 className="desc__h2">
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter.typeString('Sobre mim...').start();
-                }}
-                options={{
-                  autoStart: true,
-                  cursorClassName: 'Typewriter__cursor desc__h2__cursor',
-                }}
-              />
-            </h2>
-            <p className="desc__p">
+            <TitleH2 textClassName="desc__h2" cursorClassName="desc__h2__cursor" title="Sobre mim..." />
+            <PG className="desc__p">
               Olá! Meu nome é Diogo, sou um jovem estudante de programação de 19 anos apaixonado por tecnologia e
               programação. Estou em busca de oportunidades para desenvolver minhas habilidades em programação e
               contribuir para projetos inovadores e desafiadores. Minha principal habilidade é o desenvolvimento web com
               HTML, CSS, JavaScript e React. Sou curioso, dedicado e sempre disposto a aprender novas tecnologias e
               conceitos de programação. Se você estiver procurando por um desenvolvedor entusiasmado e comprometido,
               entre em contato comigo!
-            </p>
+            </PG>
           </div>
           <nav className="desc__buttons">
             <NeonBtn

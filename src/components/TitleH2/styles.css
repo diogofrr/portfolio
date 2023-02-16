@@ -1,0 +1,23 @@
+.title__h2{
+  font-size: 6rem;
+  font-family: var(--Montserrat);
+  font-weight: 700;
+  letter-spacing: .2rem;
+  color: var(--cortexto);
+}
+
+.title__cursor{
+  font-size: 8rem;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 480px){
+  .desc__h2{
+    font-size: 4rem;
+  }
+
+  .title__cursor{
+    font-size: 6rem;
+  }
+}

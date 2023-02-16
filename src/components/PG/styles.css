@@ -1,0 +1,15 @@
+.pg__p{
+  font-size: 1.8rem;
+  line-height: calc(2rem * 1.4);
+  letter-spacing: .1rem;
+  word-spacing: .2rem;
+  font-family: var(--OpenSans);
+  color: var(--cortexto);
+}
+
+
+@media screen and (max-width: 480px){
+  .desc__p{
+    font-size: 1.6rem;
+  }
+}

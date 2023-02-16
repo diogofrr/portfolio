@@ -1,0 +1,17 @@
+.knowledge-section{
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  background-color: var(--corfundo);
+}
+
+.knowledge-section__title{
+  text-align: left;
+}
+
+.knowledge-section__title-cursor{
+  color: var(--corsecundaria);
+  text-shadow:
+  0 0 4px var(--corsecundaria),
+  0 0 11px var(--corsecundaria);
+}

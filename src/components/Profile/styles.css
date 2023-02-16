@@ -9,7 +9,6 @@
   width: 100vw;
 
   background-color: var(--corfundo);
-  color: var(--cortexto);
 }
 
 .profile-section__main-profile{
@@ -26,29 +25,14 @@
 }
 
 .desc__h2{
-  font-family: var(--Montserrat);
-  font-weight: 700;
-  letter-spacing: .2rem;
-  font-size: 6rem;
   margin-bottom: 2rem;
 }
 
 .desc__h2__cursor{
   color: var(--corprincipal);
-  font-family: sans-serif;
-  font-weight: 900;
-  font-size: 8rem;
   text-shadow:
   0 0 4px var(--corprincipal),
   0 0 11px var(--corprincipal);
-}
-
-.desc__p{
-  font-size: 1.8rem;
-  line-height: calc(2rem * 1.4);
-  letter-spacing: .1rem;
-  word-spacing: .2rem;
-  font-family: var(--OpenSans);
 }
 
 /* Imagem do container sobre */
@@ -156,17 +140,5 @@ Laptop ou desktop de alta resolução: 1920 x 1080.
   .main-profile__img > div{
     width: 300px !important;
     height: 300px !important;
-  }
-
-  .desc__h2{
-    font-size: 4rem;
-  }
-
-  .desc__p{
-    font-size: 1.6rem;
-  }
-
-  .desc__h2__cursor{
-    font-size: 6rem;
   }
 }
