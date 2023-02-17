@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import P from 'prop-types';
 import useScrollBlock from '../../utils/useScrollBlock';
 
@@ -13,20 +13,25 @@ export const NavBar = ({ className, hasScroll = false }) => {
   const [buttonAnimation, setButtonAnimation] = useState(false);
   const [blockScroll, allowScroll] = useScrollBlock();
 
-  function toggleMenu() {
-    setActiveMenu(() => !menuAnimation);
-  }
+  const toggleMenu = useCallback(() => {
+    setActiveMenu((menuAnimation) => !menuAnimation);
+  }, []);
 
-  useEffect(() => {
+  const handleMenuAnimation = () => {
     if (activeMenu) {
-      setMenuAnimation(() => 'nav-active');
-      setButtonAnimation(() => false);
+      setMenuAnimation('nav-active');
+      setButtonAnimation(false);
       hasScroll && blockScroll();
     } else {
-      setMenuAnimation(() => '');
-      setButtonAnimation(() => true);
+      setMenuAnimation('');
+      setButtonAnimation(true);
       hasScroll && allowScroll();
     }
+  };
+
+  useEffect(() => {
+    handleMenuAnimation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeMenu, blockScroll, allowScroll, hasScroll]);
 
   return (

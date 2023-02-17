@@ -1,0 +1,19 @@
+.lang-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  margin: 4.5rem;
+}
+
+.lang-box__lang-name{
+  font-size: 2rem;
+  font-family: var(--OpenSans);
+  color: var(--cortexto);
+  padding: .6rem 0;
+}
+
+.lang-box__lang-icon{
+  width: 20rem;
+}
+

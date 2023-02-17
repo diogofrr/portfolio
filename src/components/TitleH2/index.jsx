@@ -31,5 +31,4 @@ TitleH2.propTypes = {
   title: P.string.isRequired,
   textClassName: P.string,
   cursorClassName: P.string,
-  ref: P.string,
 };

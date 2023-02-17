@@ -1,10 +1,16 @@
 import P from 'prop-types';
 import './styles.css';
 
-export const LangIcon = ({ src, alt }) => {
+export const LangIcon = ({ src, alt, langName, color }) => {
   return (
-    <div>
-      <img src={src} alt={alt} />
+    <div className="lang-box">
+      <img
+        className="lang-box__lang-icon"
+        src={src}
+        alt={alt}
+        style={{ filter: `drop-shadow(0px 0px 6px ${color})` }}
+      />
+      <p className="lang-box__lang-name">{langName}</p>
     </div>
   );
 };
@@ -12,4 +18,6 @@ export const LangIcon = ({ src, alt }) => {
 LangIcon.propTypes = {
   src: P.string.isRequired,
   alt: P.string.isRequired,
+  langName: P.string.isRequired,
+  color: P.string.isRequired,
 };
