@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 480px){
-  .desc__h2{
+  .title__h2{
     font-size: 4rem;
   }
 

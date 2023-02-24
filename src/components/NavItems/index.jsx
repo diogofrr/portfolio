@@ -13,10 +13,10 @@ export const NavItems = ({ menuAnimation }) => {
           <a href="/sobre">Sobre</a>
         </li>
         <li className="main-header__li">
-          <a href="/">Projetos</a>
+          <a href="/projetos">Projetos</a>
         </li>
         <li className="main-header__li">
-          <a href="/">Contato</a>
+          <a href="/contato">Contato</a>
         </li>
       </ul>
     </nav>

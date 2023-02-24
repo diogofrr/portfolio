@@ -9,7 +9,7 @@ export const NeonBtn = ({ color, text, className = '', link, href = '' }) => {
       {link === false ? (
         <span className="button__text">{text}</span>
       ) : (
-        <a className="button__text" href={href} target="_blank" rel="noreferrer">
+        <a className="button__text" href={href}>
           {text}
         </a>
       )}

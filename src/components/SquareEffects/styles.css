@@ -3,8 +3,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 70px);
+  height: 100%;
   overflow: hidden;
+  background-color: var(--corfundo);
+  z-index: -1;
 }
 
 .squares span{

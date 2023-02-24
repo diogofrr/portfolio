@@ -1,0 +1,18 @@
+.projects-section{
+  width: 100vw;
+  height: calc(100vh - 70px);
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.projects-section__cursor{
+  color: var(--corprincipal);
+  text-shadow:
+  0 0 4px var(--corprincipal),
+  0 0 11px var(--corprincipal);
+}
+
+.projects-section__card-container{
+  width: 100vw;
+  height: 100vh;
+}

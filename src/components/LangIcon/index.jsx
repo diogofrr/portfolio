@@ -8,7 +8,7 @@ export const LangIcon = ({ src, alt, langName, color }) => {
         className="lang-box__lang-icon"
         src={src}
         alt={alt}
-        style={{ filter: `drop-shadow(0px 0px 6px ${color})` }}
+        style={{ filter: `drop-shadow(0px 0px 2px ${color})` }}
       />
       <p className="lang-box__lang-name">{langName}</p>
     </div>

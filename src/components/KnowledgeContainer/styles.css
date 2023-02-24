@@ -3,16 +3,20 @@
   min-height: 100vh;
   height: auto;
   width: 100vw;
-  background-color: var(--corfundo);
+  margin: 0 auto;
 }
 
 .lang-container{
   margin: 0 auto;
   display: flex;
-  width: 80vw;
-  justify-content: space-around;
+  width: 80%;
   flex-flow: row wrap;
-  padding-top: 10rem;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+
+.lang-container div{
+  padding: 0 2rem;
 }
 
 .knowledge-section__title{
@@ -24,4 +28,19 @@
   text-shadow:
   0 0 4px var(--corsecundaria),
   0 0 11px var(--corsecundaria);
+}
+
+.kn-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.buttons__btn-projects{
+  transition: .3s;
+  filter: drop-shadow(0 0 4px var(--corfuncional)) !important;
+}
+
+.buttons__btn-projects:hover{
+  filter: drop-shadow(0 0 10px var(--corfuncional)) !important;
 }
