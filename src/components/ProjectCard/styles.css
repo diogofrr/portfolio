@@ -1,92 +1,79 @@
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
-
 :root {
-  --card-height: 400px;
-  --card-width: calc(var(--card-height) / 1.5);
+  --card-height: 40rem;
+  --card-width: calc(var(--card-height) * 1.5);
+
+  --border-radius: 1rem;
+  --item-width: 98%;
 
   --cor1: #ff00ff;
   --cor2: #19ffdc;
   --cor3: #ffce19;
 }
 
-.card {
-  background: black;
+.card-a{
+  text-decoration: none;
+}
+
+.card{
   width: var(--card-width);
   height: var(--card-height);
-  padding: 3px;
+  overflow: hidden;
   position: relative;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  font-family: Open-sans;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-background{
+  height: 800%;
+  width: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  margin-right: -50%;
+  z-index: -1;
+  background: linear-gradient(
+    var(--cor1),
+    var(--cor2),
+    var(--cor3)
+  );
+  animation: spin 5s linear infinite;
+  opacity: 2;
 }
 
 .card__img{
-  width: 100%;
-  height: 200px;
-  background-color: white;
+  width: 98%;
+  height: 80%;
+  display: flex;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.card::before {
-  content: "";
-  width: 104%;
-  height: 102%;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate),
-    var(--cor1),
-    var(--cor2) 43%,
-    var(--cor3)
-  );
-  position: absolute;
-  z-index: -1;
-  top: -1%;
-  left: -2%;
-  animation: spin 2.5s linear infinite;
+.card__description{
+  background-color: var(--corfundo);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  width: var(--item-width);
+  height: 18%;
 }
 
-.card::after {
-  position: absolute;
-  content: "";
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate),
-    var(--cor1),
-    var(--cor2) 43%,
-    var(--cor3)
-  );
-  opacity: 1;
-  transition: opacity 0.5s;
-  animation: spin 2.5s linear infinite;
-}
-
-.card__button{
-  width: 100px;
-  height: 40px;
+.card__title{
+  color: white;
+  font-family: var(--Montserrat);
+  font-size: 2.4rem;
+  margin: 0.5rem;
 }
 
 @keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
   100% {
-    --rotate: 360deg;
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 785px) {
+  .card-a{
+    --card-height: 20rem;
+    --card-width: calc(var(--card-height) * 1.5);
   }
 }

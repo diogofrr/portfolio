@@ -14,6 +14,7 @@
   width: 6rem;
   height: 35rem;
   transition: .3s;
+  overflow: visible;
 }
 
 .side-icons > a{
@@ -68,7 +69,7 @@
 
     color: white;
     transition: .3s;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .side-icons:hover a:hover{

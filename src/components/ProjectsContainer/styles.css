@@ -1,8 +1,13 @@
 .projects-section{
   width: 100vw;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  height: auto;
   text-align: center;
-  padding-top: 4rem;
+  padding: 4rem 0;
+}
+
+.projects-section__title{
+  padding: 0 0 4rem 0;
 }
 
 .projects-section__cursor{
@@ -12,7 +17,17 @@
   0 0 11px var(--corprincipal);
 }
 
-.projects-section__card-container{
-  width: 100vw;
-  height: 100vh;
+.projects-section__projects-group{
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+
+.projects-section__projects-group > a{
+  margin: 4rem;
+}
+

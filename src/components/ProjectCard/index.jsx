@@ -4,15 +4,16 @@ import './styles.css';
 
 export const ProjectCard = ({ src, alt, cardTitle, href }) => {
   return (
-    <div className="card">
-      <img src={src} alt={alt} className="card__img" />
-      <div className="card__description">
-        <h3 className="card__title">{cardTitle}</h3>
-        <a href={href} target="_blank" className="card__a" rel="noreferrer">
-          <button className="card__button">Visualizar</button>
-        </a>
+    <a href={href} target="_blank" className="card-a" rel="noreferrer">
+      <div className="card">
+        <div className="card-background"></div>
+        <img src={src} alt={alt} className="card__img" />
+        <div className="card__description">
+          <h3 className="card__title">{cardTitle}</h3>
+        </div>
       </div>
-    </div>
+      <div className="card__shadow"></div>
+    </a>
   );
 };
 
