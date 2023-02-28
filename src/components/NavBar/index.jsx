@@ -17,7 +17,7 @@ export const NavBar = ({ className, hasScroll = false }) => {
     setActiveMenu((menuAnimation) => !menuAnimation);
   }, []);
 
-  const handleMenuAnimation = () => {
+  const handleMenuAnimation = useCallback(() => {
     if (activeMenu) {
       setMenuAnimation('nav-active');
       setButtonAnimation(false);
@@ -27,18 +27,23 @@ export const NavBar = ({ className, hasScroll = false }) => {
       setButtonAnimation(true);
       hasScroll && allowScroll();
     }
-  };
+  }, [activeMenu, allowScroll, blockScroll, hasScroll]);
 
   useEffect(() => {
     handleMenuAnimation();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeMenu, blockScroll, allowScroll, hasScroll]);
+  }, [activeMenu, blockScroll, allowScroll, hasScroll, handleMenuAnimation]);
 
   return (
     <header className={`main-header ${className}`}>
       <Logo />
       <HamburguerBtn animationTrigger={buttonAnimation} handleStartAnimation={toggleMenu} />
-      <NavItems menuAnimation={menuAnimation} />
+      <NavItems
+        menuAnimation={menuAnimation}
+        onClick={() => {
+          setActiveMenu(() => false);
+          allowScroll();
+        }}
+      />
     </header>
   );
 };

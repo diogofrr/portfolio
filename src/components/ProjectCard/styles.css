@@ -76,4 +76,8 @@
     --card-height: 20rem;
     --card-width: calc(var(--card-height) * 1.5);
   }
+
+  .card__title{
+    font-size: 1.5rem;
+  }
 }

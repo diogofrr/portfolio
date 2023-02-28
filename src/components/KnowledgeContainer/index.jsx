@@ -34,7 +34,7 @@ export const KnowledgeContainer = () => {
         <LangIcon
           alt="Ícone da biblioteca React"
           color="#61DAFB"
-          langName="React.js"
+          langName="React"
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
         />
         <LangIcon

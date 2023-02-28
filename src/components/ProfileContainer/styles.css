@@ -97,14 +97,6 @@
   filter: drop-shadow(0 0 10px var(--corfuncional)) !important;
 }
 
-.buttons__btn-contact > a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /*
 Móvel: 360 x 640.
 Móvel: 375 x 667.

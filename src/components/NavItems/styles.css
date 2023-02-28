@@ -64,20 +64,18 @@
 
   .main-header__nav{
     position: fixed;
-    display: block;
+    display: none;
     background-color: var(--corfundo);
     width: 100%;
-    position: absolute;
     top: 70px;
     z-index: 9999;
     height: 0px;
     transition: .6s;
-    visibility: hidden;
     overflow-y: hidden;
   }
 
   .main-header__nav.nav-active{
-      visibility: visible;
+      display: block;
       overflow-y: auto;
       height: calc(100vh - 70px);
   }

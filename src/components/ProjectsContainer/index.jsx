@@ -6,7 +6,7 @@ import feti from '../../_assets/img/projects/feti.png';
 import jogoDaVelha from '../../_assets/img/projects/jogo-da-velha.png';
 import portfolio from '../../_assets/img/projects/portfolio.png';
 import area from '../../_assets/img/projects/area.png';
-import persFundo from '../../_assets/img/projects/personalizador-de-fundo.png';
+import persFundo from '../../_assets/img/projects/personalizador-de-fundos.png';
 
 import './styles.css';
 
