@@ -1,12 +1,12 @@
 import { TitleH2 } from '../TitleH2';
 import { ProjectCard } from '../ProjectCard';
 
-import crud from '../../_assets/img/projects/crud-com-api.png';
-import feti from '../../_assets/img/projects/feti.png';
-import jogoDaVelha from '../../_assets/img/projects/jogo-da-velha.png';
-import portfolio from '../../_assets/img/projects/portfolio.png';
-import area from '../../_assets/img/projects/area.png';
-import persFundo from '../../_assets/img/projects/personalizador-de-fundos.png';
+import crud from '../../assets/img/projects/crud-com-api.png';
+import feti from '../../assets/img/projects/feti.png';
+import jogoDaVelha from '../../assets/img/projects/jogo-da-velha.png';
+import portfolio from '../../assets/img/projects/portfolio.png';
+import area from '../../assets/img/projects/area.png';
+import persFundo from '../../assets/img/projects/personalizador-de-fundos.png';
 
 import './styles.css';
 

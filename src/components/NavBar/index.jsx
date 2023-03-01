@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import P from 'prop-types';
-import useScrollBlock from '../../utils/useScrollBlock';
+import useScrollBlock from '../../hooks/useScrollBlock';
 
 import './styles.css';
 import { HamburguerBtn } from '../HamburguerBtn';

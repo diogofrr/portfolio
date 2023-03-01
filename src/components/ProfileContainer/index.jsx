@@ -33,8 +33,10 @@ export const ProfileContainer = () => {
               color="var(--corfuncional)"
               text="CONTATAR"
               link={true}
-              href="/contato"
+              href="https://api.whatsapp.com/send/?phone=5531917890386&text&type=phone_number&app_absent=0"
               className="buttons__btn-contact"
+              target="_blank"
+              rel="noreferrer"
             />
           </nav>
         </div>

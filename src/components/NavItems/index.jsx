@@ -17,7 +17,13 @@ export const NavItems = ({ menuAnimation, onClick }) => {
           <Link to="/projetos">Projetos</Link>
         </li>
         <li className="main-header__li">
-          <Link to="/contato">Contato</Link>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5531917890386&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Contatar
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,9 +1,0 @@
-.form-container{
-  background-color: black;
-  height: calc(100vh - 70px);
-  width: 100vw;
-}
-
-.form-cursor{
-  color: var(--corprincipal);
-}

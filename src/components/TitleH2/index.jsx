@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect';
 import P from 'prop-types';
 
 import { useRef } from 'react';
-import { useObserver } from '../../utils/useObserver';
+import { useObserver } from '../../hooks/useObserver';
 
 import './styles.css';
 

@@ -7,21 +7,11 @@
   transform: translate(-50%, -50%);
 }
 
-.text-box__title, .text-box__subtitle{
-  display: inline;
-}
-
 .text-box__title{
   font-size: 6rem;
   color: var(--cortexto);
   font-family: var(--Montserrat);
   font-weight: 700;
-}
-
-.text-box__subtitle{
-  color: var(--cortextosecundario);
-  font-size: 1.8rem;
-  font-family: var(--OpenSans);
 }
 
 .text-box__cursor{
@@ -42,9 +32,5 @@
 @media screen and (max-width: 400px){
   .text-box__title{
     font-size: 4.6rem;
-  }
-
-  .text-box__subtitle{
-    font-size: 1.6rem;
   }
 }
