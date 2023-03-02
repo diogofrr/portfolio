@@ -3,7 +3,7 @@
   min-height: calc(100vh - 70px);
   height: auto;
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 0 10rem 0;
 }
 
 .projects-section__title{
