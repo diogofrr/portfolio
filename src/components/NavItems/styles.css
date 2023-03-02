@@ -64,11 +64,11 @@
 
   .main-header__nav{
     position: fixed;
-    display: none;
+    display: block;
     background-color: var(--corfundo);
     width: 100%;
     top: 70px;
-    z-index: 9999;
+    z-index: 9999999999999999999999999999999999;
     height: 0px;
     transition: .6s;
     overflow-y: hidden;

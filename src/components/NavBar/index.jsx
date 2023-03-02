@@ -20,11 +20,11 @@ export const NavBar = ({ className, hasScroll = false }) => {
   const handleMenuAnimation = useCallback(() => {
     if (activeMenu) {
       setMenuAnimation('nav-active');
-      setButtonAnimation(false);
+      setButtonAnimation(() => false);
       hasScroll && blockScroll();
     } else {
       setMenuAnimation('');
-      setButtonAnimation(true);
+      setButtonAnimation(() => true);
       hasScroll && allowScroll();
     }
   }, [activeMenu, allowScroll, blockScroll, hasScroll]);

@@ -13,7 +13,7 @@ export const HamburguerBtn = ({ animationTrigger, handleStartAnimation }) => {
   };
 
   useEffect(() => {
-    setAnimationClass(() => (animated ? 'closeAni' : ''));
+    setAnimationClass(() => (animated ? 'close-animation' : ''));
   }, [animated]);
 
   return (

@@ -24,29 +24,33 @@
   }
 
   /*ANIMAÇÃO DO BOTÃO HAMBURGUER*/
-  .main-header__menu-button .menu-button__line, .main-header__menu-button.closeAni .menu-button__line{
+  .main-header__menu-button .menu-button__line, .main-header__menu-button.close-animation .menu-button__line{
     transition: .6s;
   }
 
-  .main-header__menu-button.closeAni .menu-button__line{
+  .menu-button__line{
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+
+  .main-header__menu-button.close-animation .menu-button__line{
     position: relative;
   }
 
-  .main-header__menu-button.closeAni #l1, #l3{
+  .main-header__menu-button.close-animation #l1, #l3{
     transition: 0.3s;
     position: relative;
   }
 
-  .main-header__menu-button.closeAni #l1{
+  .main-header__menu-button.close-animation #l1{
     transform: rotate(-45deg) translate(-8px, 8px);
   }
 
-  .main-header__menu-button.closeAni #l2{
+  .main-header__menu-button.close-animation #l2{
     transform: translateX(40px);
     opacity: 0;
   }
 
-  .main-header__menu-button.closeAni #l3{
+  .main-header__menu-button.close-animation #l3{
     transform: rotate(45deg) translate(-5px, -5px);
   }
 }
