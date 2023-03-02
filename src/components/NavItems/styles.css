@@ -68,7 +68,7 @@
     background-color: var(--corfundo);
     width: 100%;
     top: 70px;
-    z-index: 9999999999999999999999999999999999;
+    z-index: 6;
     height: 0px;
     transition: .6s;
     overflow-y: hidden;
