@@ -1,7 +1,7 @@
 import { TitleH2 } from '../TitleH2';
 import { ProjectCard } from '../ProjectCard';
 
-import crud from '../../assets/img/projects/crud-com-api.png';
+import apiViaCep from '../../assets/img/projects/api-viacep.png';
 import feti from '../../assets/img/projects/feti.png';
 import jogoDaVelha from '../../assets/img/projects/jogo-da-velha.png';
 import portfolio from '../../assets/img/projects/portfolio.png';
@@ -22,10 +22,10 @@ export const ProjectsContainer = () => {
           href="https://github.com/diogofrr/portfolio"
         />
         <ProjectCard
-          cardTitle="diogofrr/crud-com-api"
-          alt="Projeto crud-com-api"
-          src={crud}
-          href="https://github.com/diogofrr/crud-com-api"
+          cardTitle="diogofrr/api-viacep"
+          alt="Projeto api-viacep"
+          src={apiViaCep}
+          href="https://github.com/diogofrr/api-viacep-teste"
         />
         <ProjectCard
           cardTitle="diogofrr/landing-page-feti"
